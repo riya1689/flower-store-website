@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower Store</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+
+</head>
+<body>
+    <header> 
+        <nav class="w-11/12 mx-auto py-1 flex justify-between items-center">
+            <div class="logo w-[150px]">
+                <img src="assets/flowerStore-logo.png" alt=""/>
+            </div>
+            <div class="flex justify-between gap-x-8 items-center">
+                <div class ="home">
+                <p><a href="#" class="hover:underline">Home</a></p>
+            </div>
+            <div class="blog">
+                <h6><a href="#" class="hover:underline">Blog</a></p>
+            </div>
+            <div class="contact">
+                <p><a href="#" class="hover:underline">Contact</a></p>
+            </div>
+
+            </div>
+            <div class="signInIcon w-[50px]">
+                <img src="assets/signin logo.png"/>
+            </div>
+        </nav>
+    </header>
+    <script src="scripts/flowers.js"></script>
+    <section class="flex flex-col items-center justify-center gap-y-4 text-center py-20 px-18">
+        <div class="line1 text-gray-400 ">
+        <p>Flowers that make ordinary days special</p>
+    </div>
+    <div class="line2 text-4xl font-bold">
+        <p>Bring Nature’s Beauty to <br>Your Doorstep</p>
+    </div>
+    <div class="line3 text-cyan-950">
+        <p>Discover, learn, and shop the world of flowers — all in one place</p>
+    </div>
+    <div class="btn bg-cyan-400 text-gray-50 w-[10%] border-none hover:bg-cyan-500">
+        <button onclick="">View More</button>
+    </div>
+    <div class="banner-img">
+        <img src="assets/flowe-banner.jpg"/>
+    </div>
+    <div class="line4 font-bold text-lg">
+        <p>Shop by Category</p>
+    </div>
+</section>
+<nav id="categories"></nav>
+
+    
+</body>
+</html>
