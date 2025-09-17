@@ -11,7 +11,7 @@
 </head>
 <body>
     <header> 
-        <nav class="w-11/12 mx-auto py-1 flex justify-between items-center">
+        <nav class="w-11/12 mx-auto py-4 flex justify-between items-center">
             <div class="logo w-[150px]">
                 <img src="assets/flowerStore-logo.png" alt=""/>
             </div>
@@ -33,27 +33,43 @@
         </nav>
     </header>
     <script src="scripts/flowers.js"></script>
-    <section class="flex flex-col items-center justify-center gap-y-4 text-center py-20 px-18">
-        <div class="line1 text-gray-400 ">
-        <p>Flowers that make ordinary days special</p>
+    <section
+    class="w-11/12 mx-auto my-8 rounded-xl min-h-[70vh] flex flex-col items-center justify-center gap-y-4 text-center bg-[url('assets/flowe-banner.jpg')] bg-cover bg-center">
+        <div class="line1 text-slate-700">
+            <p>Flowers that make ordinary days special</p>
+        </div>
+        <div class="line2 text-4xl font-bold  text-slate-900">
+            <p>Bring Nature’s Beauty to <br />Your Doorstep</p>
+        </div>
+        <div class="line3 text-slate-700">
+            <p>Discover, learn, and shop the world of flowers — all in one place</p>
+        </div>
+        <div class="btn">
+            <button class="bg-cyan-400 text-gray-50 py-2 px-6 border-none hover:bg-cyan-500 rounded">
+            View More
+            </button>
+        </div>
+  </section>
+
+    <div class="line4 font-bold text-lg text-center mt-8">
+    <p>Shop by Category</p>
     </div>
-    <div class="line2 text-4xl font-bold">
-        <p>Bring Nature’s Beauty to <br>Your Doorstep</p>
+
+<!-- this will show button from js code-->
+<nav id="categories" class="py-3 flex gap-6 justify-center"></nav>
+<section class="flex justify-between gap-4xl px-20">
+    <div class="exploreCollection font-bold">
+        <p>Explore Our Collection</p>
+
     </div>
-    <div class="line3 text-cyan-950">
-        <p>Discover, learn, and shop the world of flowers — all in one place</p>
-    </div>
-    <div class="btn bg-cyan-400 text-gray-50 w-[10%] border-none hover:bg-cyan-500">
-        <button onclick="">View More</button>
-    </div>
-    <div class="banner-img">
-        <img src="assets/flowe-banner.jpg"/>
-    </div>
-    <div class="line4 font-bold text-lg">
-        <p>Shop by Category</p>
+    <div class="btn align-right">
+        <button onclick="">Short</button>
     </div>
 </section>
-<nav id="categories"></nav>
+
+<main>
+    <section id="flowers" class="w-11/12 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 " ></section>
+</main>
 
     
 </body>
